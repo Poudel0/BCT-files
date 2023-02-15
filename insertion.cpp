@@ -14,13 +14,15 @@ int main()
 	
 	scanf("%d", &arr[i]);
 	}
-
-	for (i = 0; i < n; i++)
-		printf("%d ", arr[i]);
 	printf("\n");
 
+	for (i = 0; i < n; i++){
+	
+		printf("%d \n", arr[i]);
+}
 
-printf("Enter the value to update");
+
+printf("\nEnter the value to update");
 scanf("%d",&x);
 
 printf("Enter the position to update");
@@ -32,17 +34,19 @@ scanf("%d",&pos);
 	n++;
 
 
-	for (i = n - 1; i >= pos; i--)
+	for (i = n - 1; i >= pos; i--){
+	
 		arr[i] = arr[i - 1];
-
+}
 
 	arr[pos - 1] = x;
 
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i < n; i++){
+	
 		printf("%d ", arr[i]);
 	printf("\n");
-
+}
 	return 0;
 }
 
